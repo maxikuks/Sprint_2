@@ -3,7 +3,7 @@ package model;
 //забираю через * сразу все что есть в пакете. в дальнейшем может нужно будет конретизировать.
 import model.constants.*;
 
-public class Apple extends Food implements Discountable {
+public class Apple extends Food {
     private String colour; //Строковое поле "Цвет яблок"
 
     public Apple(int amount, double price, String colour) {
@@ -15,8 +15,8 @@ public class Apple extends Food implements Discountable {
     //Для красных яблок (colour равно "red") скидка должна быть равна 60%: соответствующий метод возвращает значение 60.
     @Override
     public double getDiscount() {
-        if(Colour.Red.equals(colour)) {
-            return Discount.RedAppleDisc;
+        if(Colour.RED.equals(colour)) {
+            return Discount.RED_APPLE_DISC;
         }
         return 0;
     }

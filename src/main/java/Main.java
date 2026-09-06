@@ -10,9 +10,9 @@ public class Main {
         //Мясо в количестве 5 кг по цене 100 рублей за кг;
         Meat meat = new Meat(5,100);
         //Яблоки красные в количестве 10 кг по цене 50 рублей;
-        Apple rApple = new Apple(10,50,Colour.Red);
+        Apple rApple = new Apple(10,50,Colour.RED);
         //Яблоки зелёные в количестве 8 кг по цене 60 рублей.
-        Apple gApple = new Apple(8,60,Colour.Green);
+        Apple gApple = new Apple(8,60,Colour.GREEN);
 
         //Создай массив продуктов из этих элементов
         Food[] products = {meat, rApple, gApple};

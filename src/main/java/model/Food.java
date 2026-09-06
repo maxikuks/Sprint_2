@@ -1,6 +1,6 @@
 package model;
 
-public abstract class Food {
+public abstract class Food implements Discountable {
     //Поля должны быть доступны только из классов-потомков
     //Модификатор protected работает так же, как модификатор по умолчанию. При этом он даёт доступ классам-наследникам даже за пределами пакета.
     protected int amount; //Количество продукта в килограммах (целое число)
@@ -27,6 +27,7 @@ public abstract class Food {
     }
 
     //эксперипент
+    @Override
     public double getDiscount() {
         return 0;
     }
